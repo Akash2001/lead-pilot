@@ -8,7 +8,7 @@ export default function AgentResults({results}){
 
       <h2>{results.leadsFound} Leads Found</h2>
 
-      {results.results.map((lead,i)=>(
+      {results.map((lead,i)=>(
 
         <div
           key={i}
@@ -20,11 +20,11 @@ export default function AgentResults({results}){
           }}
         >
 
-          <h3>{lead.company}</h3>
+          <h3>{lead.name}</h3>
 
-          <p>Founder: {lead.founder}</p>
+          <p>Location: {lead.location}</p>
 
-          <pre>{lead.email}</pre>
+          {/* <pre>{lead.email}</pre> */}
 
         </div>
 

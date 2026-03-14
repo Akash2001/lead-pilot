@@ -25,7 +25,7 @@ export default function App() {
 
     const data = await res.json();
 
-    setResults(data);
+    setResults(data.data);
 
     setLogs(prev => [...prev,"Emails generated"]);
   }
